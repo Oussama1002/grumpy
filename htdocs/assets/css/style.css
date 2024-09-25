@@ -1,0 +1,1042 @@
+/*
+ * Company: Rinalink
+ * Author: Idriss Al Idrissi aka Ihi
+ * Email: idriss.alidrissi.dev@gmail.com
+ * Date: 2024-09-04
+ * Description: CSS stylesheet for the main website layout.
+ */
+
+/************************************************************************
+ * Variables
+ ************************************************************************/
+
+/* Cantata */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+	/* bleu hapî : #002055 */
+	/* Couleurs */
+	--corporate-green-0: #004340;
+	--corporate-green-0: #002055;
+	--corporate-green-1: #056a52;
+	--corporate-green-2: #09cc9e;
+	--corporate-green-3: #1a2624;
+	--corporate-green-4: #023f3c;
+
+	--corporate-dark-blue-0: #2d3e51;
+
+	--corporate-white-0: #e8e6e3;
+	--corporate-white-1: #dad7d2;
+
+	--corporate-black-0: #181a1b;
+	--corporate-black-1: #1c1e1f;
+
+	--corporate-gray-0: #e8e6e3;
+
+	--corporate-red-0: #f2585f;
+	--corporate-red-1: #95403a;
+
+	--corporate-brown-0: #7e7568;
+
+	--corporate-yellow-0: #ffc36c;
+
+
+	--corporate-radient-0: radial-gradient(circle at 80% 50%, rgba(77, 58, 102, 1) 0%, rgba(0, 0, 0, 0) 120%);
+
+	/* Polices */
+	--font-family-fancy: "Cantata One", sans-serif;
+	--font-family-fancy: "Noto Sans", sans-serif;
+	--font-family-body: "Noto Sans", sans-serif;
+	--font-size: 12px;
+
+	/* Taille de textes */
+	--font-size-tiny: 5pt;
+	--font-size-puny: 7pt;
+	--font-size-meager: 8pt;
+	--font-size-small: 9pt;
+	--font-size-normal: 12pt;
+	--font-size-large: 14pt;
+	--font-size-Large: 17pt;
+	--font-size-LARGE: 20pt;
+	--font-size-huge: 25pt;
+	--font-size-Huge: 30pt;
+
+	/* Graisse */
+	--font-boldnes: 400;
+
+	/* Mesures */
+	--page-max-width: 1272px;
+	--tight-width: 792px;
+}
+
+/************************************************************************
+ * Global
+ ************************************************************************/
+body *
+{
+	color: var(--corporate-black-0);
+	font-family: var(--font-family-body);
+}
+
+.container
+{
+	width: 100%;
+	z-index: 3;
+	width: 100%;
+	max-width: var(--page-max-width);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+/************************************************************************
+ * Composants élémentaires
+ ************************************************************************/
+
+/* Boutons
+***********************************************************************/
+button,
+.startHiring
+{
+	display: inline-block;
+	text-align: center;
+	border-radius: 4px;
+	border: none;
+	padding: 10px 24px;
+	font-weight: 700;
+	transition: opacity .2s, color .2s, border-color .2s, background-color .2s;
+}
+a.startHiring{
+	color: var(--corporate-white-0) !important;
+
+}
+.copyright{
+	color: var(--corporate-white-0) !important;
+}
+.copyright a{
+	color: var(--corporate-white-0);
+}
+span.theNumber{
+	color: var(--corporate-white-0);
+
+	
+}
+
+.highlighted{
+	background-color: var(--corporate-green-1);
+	border: 2px solid var(--corporate-green-2);
+}
+
+/* Titraille
+***********************************************************************/
+h1.discretion
+{
+	color: var(--corporate-black-0);
+}
+
+.PageSectionTitle
+{
+	padding-top: 144px;
+	padding-bottom: 144px;
+	background: var(--corporate-white-1) !important;
+}
+
+.PageSectionTitle.center
+{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.PageSectionTitle.center *
+{
+	text-align: center;
+}
+
+h1
+{
+	font-family: var(--font-family-fancy);
+	font-size: 68px;
+	font-weight: var(--font-boldnes);
+	line-height: 1.15;
+	margin-bottom: .3em;
+}
+
+h3.discretion
+{
+	font-size: 14px;
+	text-align: center;
+	justify-content: center;
+}
+
+h3.discretion,
+h3.discretion *
+{
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--corporate-white-0) !important;
+}
+
+h3.discretion > span
+{
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 4px;
+	background: var(--corporate-green-3);
+	border-radius: 4px;
+}
+
+h4.extravagant
+{
+	text-align: center;
+	color: var(--corporate-black-0);
+	font-family: var(--font-family-fancy);
+	margin-bottom: 16px;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: var(--font-boldnes);
+	text-align: center;
+	margin-bottom: 72px;
+}
+#OurAproach h4
+{
+	text-align: center;
+	color: var(--corporate-white-0);
+	font-family: var(--font-family-fancy);
+	margin-bottom: 16px;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: var(--font-boldnes);
+	text-align: center;
+	margin-bottom: 72px;
+}
+h4.centering 
+{
+	text-align: center;
+	color: var(--corporate-black-0) !important; 
+	font-family: var(--font-family-fancy);
+	margin-bottom: 16px;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: var(--font-boldnes);
+	text-align: center;
+	margin-bottom: 72px;
+}
+.extravagant p
+{
+	color: var(--corporate-black-0);
+	
+}
+
+
+/* Liens
+***********************************************************************/
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	opacity: .75;
+	cursor: pointer;
+}
+
+a:not(.highlighted):hover
+{
+	background-color: rgb(24, 26, 27);
+}
+
+
+/* Témoignages
+***********************************************************************/
+.testimonieCard
+{
+	background-color: var(--corporate-white-0);
+	text-align: left;
+	border-radius: 4px;
+	min-width: 100%;
+	position: relative;
+	box-sizing: border-box; /* Inclut padding et border dans la largeur */
+}
+
+.testimonieCard *
+{
+	color: var(--corporate-black-0);
+}
+
+.testimonieCard > div
+{
+	padding: 24px;
+}
+
+.testimonieSignature
+{
+	font-size: 14px;
+}
+
+.testimonieCard p
+{
+	margin-top: 0;
+}
+
+.testimonieQuotation
+{
+	font-size: 40pt;
+	color: var(--corporate-yellow-0);
+	font-family: var(--font-family-fancy);
+	display: block;
+	overflow: hidden;
+	max-height: 30px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.testimoniePicture
+{
+	object-fit: cover;
+	border-radius: 50%;
+	flex: none;
+	width: 72px;
+	height: 72px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.testimonieTextSide
+{
+	display: inline-block;
+	width: calc( 100% - 72px - 24px );
+	padding-left: 24px;
+	vertical-align: top;
+}
+
+/* Grille
+***********************************************************************/
+.CardGrid
+{
+	grid-template-columns: 1fr 1fr;
+	margin-top: 96px;
+	grid-gap: 36px;
+	grid-template-rows: auto;
+	grid-auto-columns: 1fr;
+	display: grid;
+	position: relative;
+}
+
+.trisection
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Trois colonnes de même taille */
+	grid-column-gap: 32px;
+	grid-row-gap: 32px;
+}
+
+
+.trisection > *
+{
+	overflow: hidden;
+}
+
+/* FlipFlap
+***********************************************************************/
+.flipFlap .flipFlapElement
+{
+	display: flex; 
+}
+
+.flipFlap .flipFlapElement .sideRecto,
+.flipFlap .flipFlapElement .sideVerso
+{
+	flex: 1;             /* Chaque div occupe 50% de la largeur */
+	padding: 10px;
+}
+
+.flipFlap .flipFlapElement .sideVerso
+{
+	text-align: right;
+}
+
+.flipFlap .flipFlapElement:nth-child(even) .sideRecto
+{
+	order: 2;
+}
+
+.flipFlap .flipFlapElement:nth-child(even) .sideVerso
+{
+	order: 1;
+	text-align: left;
+}
+
+.flipFlap .flipFlapElement .sideVerso img
+{
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.flipFlap .flipFlapElement h3,
+.flipFlap .flipFlapElement h4,
+.flipFlap .flipFlapElement h5,
+.flipFlap .flipFlapElement h6
+{
+	text-align: left;
+}
+
+/* Listes spéciales
+***********************************************************************/
+
+ul.validate
+{
+	list-style-type: none; 
+	padding-left: 0; 
+}
+
+ul.validate li
+{
+	padding-top: 0.2em;
+	text-indent: 0;
+	margin-bottom: 1em;
+/*	margin-left: calc( 1.4em + .4em );*/
+}
+
+ul.validate li::first-line
+{
+	/*text-indent: calc( 0 - 1.4em - .4em );*/
+}
+
+ul.validate li:before,
+dl.validate dt:before
+{
+	content: "✓";
+	background-color: var(--corporate-green-0);
+	color: var(--corporate-white-0);
+
+	font-size: 1.2em;
+	width: 1.4em;
+	height: 1.4em;
+	margin-right: .4em;
+	display: inline-block;
+	text-align: center;
+	border-radius: 100%;
+	line-height: 1.5em;
+	position: absolute;
+	left: 0;
+	margin-top: -0.2em;
+}
+
+dl.validate dt
+{
+	font-weight: bold;
+}
+
+dl.validate dd
+{
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+
+.BigNumberOL 
+{
+	display: flex;
+	flex-wrap: wrap; /* Permet de passer à la ligne suivante */
+	gap: 10px; /* Espace entre les divs */
+}
+
+.BigNumberOL > .BigNumberedCard
+{
+	flex: 1 1 calc(50% - 10px); /* Chaque div occupe 50% moins l'espace de la gap */
+	box-sizing: border-box; /* Inclut padding et border dans la largeur */
+	padding: 10px;
+}
+
+.BigNumberOL > .BigNumberedCard .theNumber
+{
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.BigNumberOL > .BigNumberedCard .theNumber span
+{
+	color: var(--corporate-white-0);
+
+	background: var(--corporate-green-1);
+	font-family: var(--font-family-fancy);
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	padding: 0.5em;
+	margin-bottom: 0.2em;
+	border-radius: 100%;
+	line-height: 1.1;
+}
+
+/* Cartes sectorielles
+***********************************************************************/
+
+.titling
+{
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.titling h4
+{
+	margin-bottom: 10px;
+}
+
+.SectorCard img
+{
+	max-width: 100%;
+}
+
+.SectorCard h5
+{
+	font-family: var(--font-family-fancy);
+	font-size: 2.0em;
+	margin-top: 0.2em;
+	margin-bottom: 0.3em;
+}
+
+.SectorCard p
+{
+	margin: 0;
+}
+
+.centering
+{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.ARole
+{
+	background-color: var(--corporate-black-1);
+}
+
+.text-container
+{
+	padding: 20px;
+}
+
+.ARole h4
+{
+font-size: 24px;
+}
+
+.ARole .imageContainer
+{
+	height: 270px;
+	overflow: hidden;
+}
+
+.ARole .imageContainer img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* permet à l'image de couvrir toute la div */
+	object-position: center; 
+}
+
+/* Forms
+***********************************************************************/
+
+.NecessaryAsterisc
+{
+	color: var(--corporate-red-0) !important;
+}
+
+form.stacked label,
+form.stacked input
+{
+	width: 100%;
+}
+
+form.stacked label
+{
+	font-size: 13px;
+}
+
+form.stacked input
+{
+	padding: 0 15px;
+	min-height: 27px;
+	border-radius: 4px;
+	border: 1px solid black;
+	color: rgb(168, 189, 206);
+	border-color: rgb(45, 62, 81);
+	height: 40px;
+	font-size: 16px;
+}
+
+form.stacked input:not(:last-of-type)
+{
+	margin-bottom: 18px;
+}
+
+form button
+{
+	margin-top: 20px;
+}
+
+
+form.bisection
+{
+	text-align: center;
+}
+
+form.bisection > div
+{
+	display: inline-block;
+	max-width: 700px;
+	width: 100%;
+}
+
+form.bisection > div > div
+{
+	/*
+	display: flex;
+	flex-wrap: wrap; 
+	text-align: left;
+	*/
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Deux colonnes de taille égale */
+	grid-template-rows: auto; /* Ajuste la hauteur des lignes automatiquement */
+	gap: 40px;
+}
+
+form.bisection > div > div .FieldContainer:nth-child(even) input + .bigRequiredAsterisc
+{
+	left: unset;
+	right: 0;
+}
+
+.FieldContainer:nth-child(7),
+.FieldContainer:nth-child(8) {
+	grid-column: 1 / -1; /* Les éléments 5 et 6 prennent toute la ligne */
+}
+
+
+form.bisection > div > div > *
+{
+}
+
+.FieldContainer
+{
+	text-align: left;
+	position: relative;
+}
+
+.RequiredRemind
+{
+	font-size: 0.8em;
+}
+
+.LabelContainer
+{
+	color: var(--corporate-black-0);
+	font-size: 0.8em;
+	position: absolute;
+	bottom: calc( 100% + 5px );
+}
+
+input,
+textarea,
+select
+{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 15px;
+	min-height: 40px;
+	border-radius: 4px;
+
+	background-color: rgb(28, 31, 32);
+	color: rgb(168, 189, 206);
+
+	color: black;
+	background-color: white;
+
+	border: 1px solid rgb(45, 62, 81);
+	font-size: var(--font-size-normal);
+}
+
+.RequiredRemind
+{
+	color: var(--corporate-red-0) !important;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	display: none;
+}
+
+textarea
+{
+	resize: vertical;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+*:focus
+{
+	outline: none;
+	border-color: var(--corporate-dark-blue-0);
+	border-color: rgba(16, 87, 144, 0.8);
+}
+
+.focused:not(:valid):not(:focus)
+{
+	border-color: var(--corporate-red-1);
+}
+
+.focused:not(:valid):not(:focus) ~ .RequiredRemind
+{
+	display: block;
+}
+
+select
+{
+	padding-top: 10px;
+}
+
+@keyframes moveAndRotate {
+		0%
+		{
+			transform: rotate(0deg) ;
+			margin-left: 0;
+		}
+		50%
+		{
+			margin-left: -30px;
+		}
+		100%
+		{
+			transform: rotate(360deg) ;
+			margin-left: 0;
+		}
+	}
+
+@keyframes moveAndRotateReverse {
+		0%
+		{
+			transform: rotate(0deg) ;
+			margin-right: 0;
+		}
+		50%
+		{
+			margin-right: -30px;
+		}
+		100%
+		{
+			transform: rotate(360deg) ;
+			margin-right: 0;
+		}
+	}
+
+
+.bigRequiredAsterisc
+{
+	color: var(--corporate-red-0) !important;
+	font-size: 2em;
+	position: absolute;
+	margin-top: 4px;
+	z-index: -1;
+	left: 0;
+}
+
+.focused:not(:valid):not(:focus) ~ .bigRequiredAsterisc
+{
+	animation: moveAndRotate 2s ease-in-out;
+}
+
+form.bisection > div > div .FieldContainer:nth-child(even) input + .bigRequiredAsterisc
+{
+	left: unset;
+	right: 0;
+}
+
+form.bisection > div > div .FieldContainer:nth-child(even) input.focused:not(:valid):not(:focus) ~ .bigRequiredAsterisc
+{
+	animation: moveAndRotateReverse 2s ease-in-out;
+}
+
+/* Différents tricheurs
+***********************************************************************/
+.wide
+{
+	color: var(--corporate-white-0);
+
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	display: block;
+}
+
+.rightAlign {
+	float: right !important;
+}
+
+.large
+{
+	font-size: 1.5em;
+}
+
+/* Divers
+***********************************************************************/
+
+video
+{
+	width: 100%;
+}
+
+/************************************************************************
+ * Logos
+ ************************************************************************/
+
+.logo svg
+{
+	height: 100%;
+}
+
+
+.logo.colored svg #claud *
+{
+	fill: var(--corporate-white-1) !important;
+}
+
+.logo.colored svg #dotIo *
+{
+	fill: var(--corporate-green-2) !important;
+}
+
+.logo.white svg #claud *
+{
+	fill: var(--corporate-white-1) !important;
+}
+
+.logo.white svg #dotIo *
+{
+	fill: var(--corporate-white-1) !important;
+}
+
+/************************************************************************
+ * Assets
+ ************************************************************************/
+
+/************************************************************************
+ * Composants Omnipage
+ ************************************************************************/
+header
+{
+	text-align: left;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	color: var(--corporate-white-0);
+	z-index: 99;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 20px;
+	backdrop-filter: blur(10px);
+}
+
+
+header .container
+{
+	display: table;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo 
+{
+	height: 30px;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: var(--corporate-green-0);
+
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer
+{
+	padding-top: 96px;
+	padding-bottom: 48px;
+	background: var(--corporate-radient-0);
+}
+
+footer .logo
+{
+	
+	height: 60px;
+}
+
+#GoToTopPage
+{
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	display: flex;
+	/* background: var(--corporate-green-0); */
+	border: 2px solid var(--corporate-brown-0);
+	display: block;
+	position: absolute;
+	z-index: 300;
+	position: fixed;
+	text-align: center;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	transition: transform 0.3s ease; 
+}
+
+#GoToTopPage:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transform: scale(1.1);
+}
+
+#GoToTopPage > span
+{
+	display: inline-block;
+/*	margin-top: 17px;*/
+	font-size: 7pt;
+}
+
+main
+{
+	flex: 1;
+}
+
+main > *
+{
+	padding-top: calc(60px + 120px);
+	padding-bottom: 40px;
+}
+
+main > *:nth-child(odd)
+{
+	color: var(--corporate-white-1);
+	background: var(--corporate-radient-0);
+}
+
+main > *:nth-child(even)
+{
+	background-color: var(--corporate-white-0);
+}
+
+
+main > *:nth-child(odd) h3.discretion > span
+{
+	color: var(--corporate-white-0);
+	background: var(--corporate-green-4);
+}
+
+main > *:nth-child(even)  .highlighted
+{
+	/* background-color: var(--corporate-green-0); */
+	border: 2px solid var(--corporate-brown-0);
+}
+
+main > *:nth-child(even) *
+{
+	color: var(--corporate-black-0);
+}
+
+/************************************************************************
+ * Components
+ ************************************************************************/
+
+#HeroSection
+{
+	text-align: center;
+	padding-bottom: 50px;
+	background: var(--corporate-radient-0);
+}
+.theText{
+	color: var(--corporate-white-0);
+
+}
+
+#HeroSection h2
+{
+	margin-top: 0;
+	margin-bottom: .3em;
+	color: var(--corporate-white-0);
+
+	font-family: var(--font-family-fancy), sans-serif;
+	font-size: 68px;
+	font-weight: var(--font-boldnes);
+	line-height: 1.15;
+	max-width: var(--tight-width);
+	display: inline-block;
+}
+
+
+
+#OurAproach .container
+{
+	max-width: var(--tight-width);
+}
+
+#ReadyToWorkTogether
+{
+	padding-top: 70px;
+	padding-bottom: 140px;
+}
+
+
+/************************************************************************
+ * Composants rémanants
+ ************************************************************************/
+
+
+/************************************************************************
+ * Composants spécifiques
+ ************************************************************************/
+
+/************************************************************************
+ * Pages
+ ************************************************************************/
+
+#FourHundredAndFourcontainer .container
+{
+	text-align: center;
+
+}
+
+#FourHundredAndFouranimation
+{
+	height: 404px;
+}
+
+#contactSection
+{
+	background: var(--corporate-white-0) !important;
+	color: black !important;
+}
+
+
+main > #LearnMore:nth-child(even) *  
+{
+	color: black ;
+}
